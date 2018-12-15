@@ -16,6 +16,12 @@ public class SwingCalculator {
     private JButton button7;
     private JButton button8;
     private JButton button9;
+    private JButton minusButton;
+    private JButton multiplyButton;
+    private JButton divideButton;
+    private JButton button0;
+    private JButton commaButton;
+    private JButton button1;
 
 
     public static void main(String[] args) {
@@ -24,7 +30,6 @@ public class SwingCalculator {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setBounds(200, 150, 0,0);
         frame.pack();
-        frame.setSize(270, 300);
         frame.setResizable(false);
         frame.setVisible(true);
     }
