@@ -1,6 +1,8 @@
 package pl.sda;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class SwingMenu {
     private JPanel mainPanel;
@@ -23,6 +25,13 @@ public class SwingMenu {
         JMenuItem openItem = new JMenuItem("Open");
         JMenuItem saveItem = new JMenuItem("Save");
         JMenuItem exitItem = new JMenuItem("Exit");
+
+        exitItem.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
+        });
+
         fileMenu.add(openItem);
         fileMenu.add(saveItem);
         fileMenu.add(exitItem);
@@ -32,13 +41,9 @@ public class SwingMenu {
         JMenu searchMenu = new JMenu("Search");
         JMenuItem findItem = new JMenuItem("Find");
         searchMenu.add(findItem);
-        
+
         menuBar.add(searchMenu);
 
-        //utworzyć 2 obiekty JMenu
-        //utworzyć obiekty JMenuItem i powiązać je z JMenu
-
-        //powiązać JMenu z JMenuBar
         frame.setJMenuBar(menuBar);
     }
 }
