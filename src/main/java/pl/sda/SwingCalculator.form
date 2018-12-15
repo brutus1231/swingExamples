@@ -34,7 +34,7 @@
           <text value="+"/>
         </properties>
       </component>
-      <component id="812a2" class="javax.swing.JButton" binding="a1Button" default-binding="true">
+      <component id="812a2" class="javax.swing.JButton" binding="button1">
         <constraints/>
         <properties>
           <preferredSize width="58" height="30"/>
@@ -132,7 +132,7 @@
           <text value="."/>
         </properties>
       </component>
-      <component id="61ea" class="javax.swing.JButton" binding="button1" default-binding="true">
+      <component id="61ea" class="javax.swing.JButton" binding="buttonEquls">
         <constraints/>
         <properties>
           <preferredSize width="120" height="30"/>
